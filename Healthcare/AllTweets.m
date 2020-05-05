@@ -1,14 +1,10 @@
 clear all
-close all
-
-% load('/Users/sorooshafyouni/Google Drive/TW_HC/Trend/DigitalHealthcare2  15   4.mat')
-% load('/Users/sorooshafyouni/Google Drive/TW_HC/Trend/DigitalHealthcare7  11  38.mat')
 
 scoreFile = 'AFINN/AFINN-111.txt';
 % stopwordsURL ='http://www.textfixer.com/resources/common-english-words.txt';
-stopwordsURL='/Users/sorooshafyouni/Google Drive/TW_HC/Removables.txt';
+stopwordsURL='/TW_HC/Removables.txt';
 
-D=dir(['/Users/sorooshafyouni/Google Drive/TW_HC/Trend/']);
+D=dir(['/TW_HC/Trend/']);
 fNum=length(D(not([D.isdir])));
 fshift=numel([D.isdir])-fNum;
 fNam={D.name};
@@ -18,7 +14,7 @@ dhAll=[];
 hcAll=[];
 for tf=1:fNum
     disp(['Opening ' fNam{tf+fshift} ' ...'])
-    load(['/Users/sorooshafyouni/Google Drive/TW_HC/Trend/' fNam{tf+fshift}])
+    load(['/TW_HC/Trend/' fNam{tf+fshift}])
     for t=1:size(DigitalHealth,2)
         dhAll=[dhAll DigitalHealth{t}{1}.statuses];
         hcAll=[hcAll Healthcare{t}{1}.statuses];

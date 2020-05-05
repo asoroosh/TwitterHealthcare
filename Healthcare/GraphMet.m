@@ -3,7 +3,7 @@ clear all
 addpath /Users/sorooshafyouni/Home/matlab/Ext
 
 rngN=10;
-load('/Users/sorooshafyouni/Desktop/Twitter/dh_all_GraphMet.mat')
+load('/Twitter/dh_all_GraphMet.mat')
 
 Hashtags=find(Vals(:,end)==2);
 

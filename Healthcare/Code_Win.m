@@ -1,9 +1,5 @@
 
 % % a sample structure array to store the credentials
-% creds = struct('ConsumerKey','fg5rJhJ1DrjZ8nR3nu7W0kodP',...
-%     'ConsumerSecret','zfjJbiw9CYk5sM6wE0C2WLyAKJVD65SgfRN2PjxL2gTn2XuRap',...
-%     'AccessToken','1548377478-qmsIsjZrfCcM2Mu4Tm3DrCxNXbqbRGsej06TK9Q',...
-%     'AccessTokenSecret','78KORYxzvnBK7SiWqf437OdGOsNiYNHVAkxVVn9oFk6q1');
 % save('creds.mat','creds');
 clear all
 
@@ -32,6 +28,6 @@ for t=1:48
 %     sampt(:,t)=clk(1:5);
     pause(960);
 end
-save(['C:\Users\afyoun_s\Google Drive\TW_HC\Trend\DigitalHealthcare' num2str(clkstart(3:5)) '.mat'],'Healthcare','DigitalHealth','-v7.3');
+save(['\TW_HC\Trend\DigitalHealthcare' num2str(clkstart(3:5)) '.mat'],'Healthcare','DigitalHealth','-v7.3');
 
 % exit

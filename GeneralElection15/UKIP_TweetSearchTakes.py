@@ -1,13 +1,19 @@
+
+# Scrapes the tweets containing the word UKIP
+# This code was used before the UK General Election in 2015
+# Soroosh Afyouni, 2015
+
+
 import tweepy
 import time
 
 qq="UKIP"
 Nums=100000
 
-consumer_key = 'fg5rJhJ1DrjZ8nR3nu7W0kodP'
-consumer_secret = 'zfjJbiw9CYk5sM6wE0C2WLyAKJVD65SgfRN2PjxL2gTn2XuRap'
-access_token = '1548377478-qmsIsjZrfCcM2Mu4Tm3DrCxNXbqbRGsej06TK9Q'
-access_token_secret = '78KORYxzvnBK7SiWqf437OdGOsNiYNHVAkxVVn9oFk6q1'
+consumer_key = 'XXX'
+consumer_secret = 'XXX'
+access_token = 'XXX'
+access_token_secret = 'XXX'
 
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
